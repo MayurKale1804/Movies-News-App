@@ -58,24 +58,4 @@ public class DBhandler extends SQLiteOpenHelper {
         return true;
     }
 
-//    public void updateStatus(String userName, String password, int status) {
-//        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
-//        ContentValues contentValues = new ContentValues();
-//        contentValues.put("userName", userName);
-//        contentValues.put("password", password);
-//        contentValues.put("loginStatus", status);
-//
-//        sqLiteDatabase.update("users", contentValues, "userName = ?", new String[]{userName});
-//        sqLiteDatabase.close();
-//    }
-
-//    public int checkStatus(String userName) {
-//        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
-//        Cursor cursor = sqLiteDatabase.rawQuery("select * from users where userName = ?", new String[]{userName,});
-//
-//        cursor.moveToFirst();
-//        int status = cursor.getInt(2);
-//
-//        return status;
-//    }
 }
